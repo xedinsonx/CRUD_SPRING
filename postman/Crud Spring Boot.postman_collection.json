@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "8db6fa40-ad6a-4894-8003-f27fc39b8369",
+		"name": "Crud Spring Boot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25997738",
+		"_collection_link": "https://www.postman.com/technical-candidate-18095104/workspace/financiera/collection/25997738-8db6fa40-ad6a-4894-8003-f27fc39b8369?action=share&source=collection_link&creator=25997738"
+	},
+	"item": [
+		{
+			"name": "Listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/products"
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Laptop Asus\",\r\n    \"price\": 2500.02\r\n    \r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/products"
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\":\"Laptop Asus2023\",\r\n    \"price\": 3000.00\r\n    \r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/products"
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\":\"Laptop Asus2023\",\r\n    \"price\": 3000.00\r\n    \r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/products/2"
+			},
+			"response": []
+		}
+	]
+}
